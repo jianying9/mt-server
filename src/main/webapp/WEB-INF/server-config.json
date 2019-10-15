@@ -1,0 +1,42 @@
+{
+    "build.timestamp": {
+        "value": "${timestamp}",
+        "describe": "打包时间"
+    },
+    "compile.model": {
+        "value": "${compile.model}",
+        "describe": "运行模式:SERVER，DEVELOPMENT，UNIT_TEST"
+    },
+    "annotation.scan.packages": {
+        "value": "com.xiezhutech.mt",
+        "describe": "扫描注解包名集合，例如com.wolf"
+    },
+    "task.core.pool.size": {
+        "value": "2",
+        "describe": "线程空闲存活数量"
+    },
+    "task.max.pool.size": {
+        "value": "4",
+        "describe": "线程最大存活数量"
+    },
+    "http.referer": {
+        "value": "",
+        "describe": "允许http的referer"
+    },
+    "http.comet": {
+        "value": "false",
+        "describe": "允许http的comet"
+    },
+    "elasticsearch.host": {
+        "value": "${elasticsearch.host}",
+        "describe": ""
+    },
+    "elasticsearch.database": {
+        "value": "${elasticsearch.database}",
+        "describe": ""
+    },
+    "custom.gcp.gateway": {
+        "value": "${custom.gcp.gateway}",
+        "describe": ""
+    }
+}
