@@ -165,30 +165,15 @@
     
     <profiles>
         <profile>
-            <id>development</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
-            <properties>
-                <compile.model>DEVELOPMENT</compile.model>
-                <elasticsearch.host>10.30.124.203</elasticsearch.host>
-                <elasticsearch.database>mt</elasticsearch.database>
-                <elasticsearch.cluster.name>xzlm-application</elasticsearch.cluster.name>
-                <custom.gcp.gateway>http://106.15.124.20/microproject-server/http/api</custom.gcp.gateway>
-                <custom.oss.url>http://dev.xiezhutech.com</custom.oss.url>
-                <custom.oss.bucket>xiezhu-file</custom.oss.bucket>
-            </properties>
-        </profile>
-        <profile>
             <id>release</id>
             <properties>
                 <compile.model>SERVER</compile.model>
-                <elasticsearch.host>10.30.124.203</elasticsearch.host>
+                <elasticsearch.host>0.0.0.0</elasticsearch.host>
                 <elasticsearch.database>mt</elasticsearch.database>
-                <elasticsearch.cluster.name>xzlm-application</elasticsearch.cluster.name>
                 <custom.gcp.gateway>http://data.xiezhutech.com/microproject-server/http/api</custom.gcp.gateway>
-                <custom.oss.url>http://r.xiezhutech.com</custom.oss.url>
-                <custom.oss.bucket>xiezhu-micproject</custom.oss.bucket>
             </properties>
         </profile>
     </profiles>
